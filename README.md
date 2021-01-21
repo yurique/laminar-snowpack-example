@@ -1,6 +1,6 @@
 # laminar-snowpack-example
 
-An example of a [snowpack](https://www.snowpack.dev/) build for a [Scala.js](https://scala-js.org) + [Laminar](https://github.com/raquo/Laminar) +
+An example of a [Snowpack](https://www.snowpack.dev/) build for a [Scala.js](https://scala-js.org) + [Laminar](https://github.com/raquo/Laminar) +
 [frontroute](https://github.com/tulz-app/frontroute) app.
 
 Note that Snowpack is not a fit for every project:
