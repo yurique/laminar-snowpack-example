@@ -1,0 +1,14 @@
+target
+.idea
+.bsp
+.bloop
+.vscode
+.metals
+project/metals.sbt
+project/project
+build
+
+node_modules
+yarn-error.log
+.DS_Store
+

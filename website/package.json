@@ -1,0 +1,27 @@
+{
+  "private": true,
+  "devDependencies": {
+    "@snowpack/plugin-postcss": "^1.1.0",
+    "@tailwindcss/ui": "^0.7.2",
+    "cssnano": "^4.1.10",
+    "postcss": "^8.2.4",
+    "postcss-cli": "^8.3.1",
+    "postcss-import": "^14.0.0",
+    "postcss-preset-env": "^6.7.0",
+    "scalajs-friendly-source-map-loader": "^0.1.5",
+    "snowpack": "^3.0.11",
+    "snowpack-plugin-content-hash": "^1.2.1",
+    "source-map-loader": "2.0.0",
+    "stylelint": "^13.9.0",
+    "stylelint-config-recommended": "^3.0.0",
+    "stylelint-config-standard": "^20.0.0",
+    "tailwindcss": "^2.0.2"
+  },
+  "browserslist": [
+    "defaults"
+  ],
+  "scripts": {
+    "start": "snowpack dev",
+    "build": "snowpack build"
+  }
+}
