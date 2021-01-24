@@ -1,14 +1,14 @@
 /*noinspection CssUnknownTarget*/
 
-@import 'tailwindcss/base';
+@import 'tailwindcss/base.css';
 
 /*noinspection CssUnknownTarget*/
 
-@import 'tailwindcss/components';
+@import 'tailwindcss/components.css';
 
 /*noinspection CssUnknownTarget*/
 
-@import 'tailwindcss/utilities';
+@import 'tailwindcss/utilities.css';
 
 body {
     @apply font-serif;
