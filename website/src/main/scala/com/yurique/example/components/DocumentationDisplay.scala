@@ -7,8 +7,7 @@ object DocumentationDisplay {
 
   def apply(title: String, markdown: String): Element =
     div(
-      cls := "prose-custom",
-//      unsafeMarkdown := TemplateVars(markdown)
+      cls := "prose-custom"
     )
 
 }

@@ -3,7 +3,7 @@ package com.yurique.example.layout
 import com.yurique.example.Page
 import com.raquo.laminar.api.L._
 import com.raquo.laminar.nodes.ReactiveHtmlElement
-import io.laminext.syntax.all._
+import io.laminext.syntax.core._
 
 object PageWrap {
 

@@ -1,7 +1,6 @@
 package com.yurique.example
 package layout
 
-import com.yurique.example.Page
 import com.raquo.laminar.api.L._
 import com.raquo.laminar.nodes.ReactiveHtmlElement
 

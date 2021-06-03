@@ -27,6 +27,7 @@ lazy val root = project
     libraryDependencies ++= Seq(
       "com.raquo"     %%% "laminar"              % "0.13.0",
       "io.frontroute" %%% "frontroute"           % "0.13.1",
+      "io.laminext"   %%% "core"                 % "0.13.3",
       "com.yurique"   %%% "embedded-files-macro" % "0.2.4"
     ),
     embedTextGlobs := Seq("**/*.md"),
