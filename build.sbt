@@ -1,7 +1,7 @@
 import org.scalajs.linker.interface.ModuleSplitStyle
 
 ThisBuild / scalaVersion := ScalaVersions.v213
-//ThisBuild / scalaVersion := ScalaVersions.v3M3
+//ThisBuild / scalaVersion := ScalaVersions.v3
 
 lazy val basicSettings = Seq(
   scalacOptions ~= (_.filterNot(
@@ -22,12 +22,12 @@ lazy val root = project
   .settings(
     scalaJSLinkerConfig ~= { _.withModuleKind(ModuleKind.ESModule) },
     scalaJSLinkerConfig ~= { _.withModuleSplitStyle(ModuleSplitStyle.FewestModules) },
-    scalaJSLinkerConfig ~= { _.withSourceMap(false) },
+    scalaJSLinkerConfig ~= { _.withSourceMap(true) },
     scalaJSUseMainModuleInitializer := true,
     libraryDependencies ++= Seq(
-      ("com.raquo"     %%% "laminar"              % "0.11.0").withDottyCompat(scalaVersion.value),
-      ("io.frontroute" %%% "frontroute"           % "0.11.7").withDottyCompat(scalaVersion.value),
-      "com.yurique"    %%% "embedded-files-macro" % "0.2.0"
+      "com.raquo"     %%% "laminar"              % "0.13.0",
+      "io.frontroute" %%% "frontroute"           % "0.13.1",
+      "com.yurique"   %%% "embedded-files-macro" % "0.2.4"
     ),
     embedTextGlobs := Seq("**/*.md"),
     (Compile / sourceGenerators) += embedFiles

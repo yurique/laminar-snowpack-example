@@ -11,7 +11,7 @@ object EmbeddedFileRender {
       cls := "space-y-10",
       components.PageTitle("Embedded File"),
       pre(
-        cls := "bg-cool-gray-100 p-4 text-lg",
+        cls := "bg-gray-100 p-4 text-lg",
         code(
           FileAsString("/index.md")
         )

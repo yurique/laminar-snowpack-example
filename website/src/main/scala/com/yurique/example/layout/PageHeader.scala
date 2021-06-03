@@ -11,7 +11,7 @@ object PageHeader {
     $page: Signal[Option[Page]]
   ): ReactiveHtmlElement.Base = {
     div(
-      cls := "flex bg-cool-gray-900 text-white py-4 px-8 items-center space-x-8",
+      cls := "flex bg-gray-900 text-white py-4 px-8 items-center space-x-8",
       nav(
         cls := "flex space-x-4 items-center justify-start",
         components.HeaderLink(

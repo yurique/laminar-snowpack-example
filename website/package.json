@@ -23,5 +23,9 @@
   "scripts": {
     "start": "snowpack dev",
     "build": "snowpack build"
+  },
+  "dependencies": {
+    "@tailwindcss/forms": "^0.3.3",
+    "@tailwindcss/typography": "^0.4.1"
   }
 }

@@ -3,7 +3,6 @@ package com.yurique.example
 import com.yurique.example.layout.PageWrap
 import com.raquo.laminar.api.L._
 import io.frontroute._
-import io.frontroute.directives._
 import org.scalajs.dom
 
 object Routes {
@@ -55,7 +54,7 @@ object Routes {
     val appContent   = PageWrap($page.signal)
     appContainer.innerHTML = ""
     com.raquo.laminar.api.L.render(appContainer, appContent)
-    runRoute(route, BrowserNavigation.locationProvider(windowEvents.onPopState))(unsafeWindowOwner)
+    runRoute(route, LocationProvider.browser(windowEvents.onPopState))(unsafeWindowOwner)
     BrowserNavigation.emitPopStateEvent()
   }
 

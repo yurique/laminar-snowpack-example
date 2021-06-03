@@ -24,7 +24,7 @@ object PageWrap {
       div(
         cls := "flex-1 flex overflow-hidden",
         div(
-          cls := "flex-1 bg-cool-gray-200 overflow-auto p-4",
+          cls := "flex-1 bg-gray-200 overflow-auto p-4",
           div(
             cls := "container mx-auto p-4 bg-white min-h-full",
             child <-- $pageAndResult.map {

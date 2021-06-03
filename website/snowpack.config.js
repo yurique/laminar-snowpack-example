@@ -1,10 +1,9 @@
 // Snowpack Configuration File
 // See all supported options: https://www.snowpack.dev/reference/configuration
 
-const developmentMode = process.env.NODE_ENV === 'development'
+scalaVersion = require('./scala-version')
 
-const scalaVersion = '2.13'
-// const scalaVersion = '3.0.0-M3'
+const developmentMode = process.env.NODE_ENV === 'development'
 
 const sbtProjectName = 'root'
 const scalaJsOptMode = developmentMode ? 'fastopt' : 'opt'
@@ -38,7 +37,7 @@ module.exports = {
     {"match": "routes", "src": ".*", "dest": "/index.html"}
   ],
   packageOptions: {
-    /* ... */
+    sourceMap: true
   },
   devOptions: {
     /* ... */

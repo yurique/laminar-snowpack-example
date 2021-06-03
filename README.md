@@ -72,3 +72,15 @@ You can build this app with Scala 3:
 * do the same in the `snowpack.config.js`
 * restart sbt and Snowpack, and follow the steps above
 
+## tailwind
+
+tailwindcss is configured to run in `jit` mode, but this feature is not yet polished 
+and sometimes it misses the classes that are actually used when `fastLinkJS` emits
+a new `.js`,
+
+If that's the case, you can either restart the snowpack or comment out this line in
+`website/tailwind.config.js`:
+
+```
+    mode: 'jit',
+```
